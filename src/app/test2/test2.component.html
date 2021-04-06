@@ -1,0 +1,6 @@
+<input [(ngModel)]="value" (keyup)="filterCategory()">
+
+<br>
+<ul>
+  <li *ngFor="let category of (categories | async)">{{category}}</li>
+</ul>
